@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多张图片介绍页面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:  rgba(240, 240, 240, 0.9); /* 页面背景透明 */
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* 内容区透明背景 */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+        .image-description {
+            width: 50%;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .image-section {
+            width: 50%;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .image-section img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            max-width: 400px;
+        }
+        .description-section {
+            width: 50%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .description-section h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .description-section p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+        @media (max-width: 768px) {
+            .image-description {
+                flex-direction: column;
+            }
+            .image-section,
+            .description-section {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 第一张图片及其描述 -->
+        <div class="image-description">
+            <div class="image-section">
+                <img src="./sz02.jpg" alt="图片1">
+            </div>
+            <div class="description-section">
+                <h1>图片标题1</h1>
+                <p>这是第一张图片的详细介绍，描述图片的内容、背景或相关信息。</p>
+            </div>
+        </div>
+
+        <!-- 第二张图片及其描述 -->
+        <div class="image-description">
+            <div class="image-section">
+                <img src="./sz02.jpg" alt="图片2">
+            </div>
+            <div class="description-section">
+                <h1>图片标题2</h1>
+                <p>这是第二张图片的详细介绍，描述图片的内容、背景或相关信息。</p>
+            </div>
+        </div>
+
+        <!-- 第三张图片及其描述 -->
+        <div class="image-description">
+            <div class="image-section">
+                <img src="./sz02.jpg" alt="图片3">
+            </div>
+            <div class="description-section">
+                <h1>图片标题3</h1>
+                <p>这是第三张图片的详细介绍，描述图片的内容、背景或相关信息。</p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
